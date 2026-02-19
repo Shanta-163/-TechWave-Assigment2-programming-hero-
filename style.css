@@ -243,4 +243,58 @@ hr{
 .card5{
     grid-column: span 3;
 }
+/*featured section styling*/
+.featured-section{
+    max-width: 85%;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    
+}
+.feautured-title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+.featured-h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.featured-p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.time {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #00FF88;
+    margin-bottom: 24px; 
+}
+.video1 , .video2 ,.video3{
+       width: 380px;
+       height: 440px;
+       background-color: #250D44;
+       background-repeat: 6px;
+       border-radius: 20px;
 
+}
+iframe{
+     border-radius: 20px 20px 0 0;
+}
+.featured-videos{
+    display: flex;
+    gap: 30px;
+}
+.featured-content{
+     padding-left: 24px;
+}
