@@ -77,6 +77,12 @@ nav{
     max-width: 550px;
     text-align: center;
 }
+.message{
+    padding-right: 8px;
+}
+.btn1-icon{
+    padding: 12px 13px 12px 15px;
+}
 .banner-btn1,.banner-btn2{
     padding: 12px 20px;
     border-radius: 10000px;
@@ -95,7 +101,11 @@ nav{
     border: 1px solid #00FF88;
 }
 .banner-btn1{
-    width: 173px;
+     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;              
+   min-width: 173px;
     height: 44px;
    color: #FFFFFF;
    background: linear-gradient(90deg, #FFB347 0%, #FF2FD8 50%, #7B2FFF 100%);
@@ -196,6 +206,11 @@ hr{
     margin-bottom: 156px;
 }
 /*choose techwave section*/
+.choose-techwave{
+    width: 100%;
+    background-color: #230E3D;
+    padding: 120px 150px;
+}
 .choose-techwave-title{
     font-weight: 700;
     font-size: 3rem;
@@ -343,3 +358,36 @@ iframe{
     border-color: #FFFFFF;
 }
 /*footer styling*/
+footer{
+    background-image: url(./B13-A02-TechWave/assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 412px;
+}
+.footer-h1{
+    font-weight: 800;
+    font-size: 3.75rem;
+    color: #FFFFFF;
+   padding-top: 120px;
+   text-align: center;
+}
+.footer-icon-parent{
+   text-align: center;
+  margin-bottom: 32px;
+  margin-top: 32px;
+ 
+}
+.footer-icon{
+   color: #FFFFFF;
+   
+}
+.footer-icon-title{
+      padding-right: 40px;
+      padding-left: 8px;
+}
+.footer-p{
+    color: #FAFAFA;
+    text-align: center;
+    margin-bottom: 120px;
+}
