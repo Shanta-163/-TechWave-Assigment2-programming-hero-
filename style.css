@@ -8,11 +8,11 @@
 body{
     background: #1A0B2E;
 }
-
 .container{
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    display: block;
 
 }
 /*nav styling*/
@@ -50,6 +50,9 @@ nav{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+ .hamburger{
+    display: none;
+ }
 /*banner styling*/
 .banner-section{
     background-image: url("./B13-A02-TechWave/assets/hero-bg.png");
@@ -120,7 +123,6 @@ nav{
 .hero-circle{
      width: 350px;
     height: auto;
-   /* display: block;*/
     border-radius: 50%;
     border-color:#2A186C;
 }
@@ -390,4 +392,166 @@ footer{
     color: #FAFAFA;
     text-align: center;
     margin-bottom: 120px;
+}
+/*responsive*/
+@media screen and (max-width:576px){
+    .banner-section{
+        background-size: contain;
+       margin-bottom: -60px; 
+         margin-top: -180px;
+    }
+    .banner-img-parent{
+    
+       padding-top: 130px;
+    }
+    .hamburger{
+        display: block;
+        padding-right: 20px;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+   nav{
+    margin-bottom: 0;
+    justify-content: space-between;
+   }
+   nav h1{
+    margin-left: 20px;
+   }
+
+    .hero-circle{
+        width: 200px;
+    }
+    .badge{
+        top: 112px;
+    }
+    .mic{
+        width: 46px;
+        padding-top: 130px;
+    }
+    .podcast-below{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        text-align: center;
+        margin-top: 0;
+       
+    }
+    .podcast-h3{
+        margin-bottom: 0px;
+    }
+     .podcast-below >div:nth-child(3){
+            margin-bottom: 40px;
+     }
+     .podcast-below >div:nth-child(4){
+            margin-bottom: 40px;
+     }
+     .podcast-num:nth-child(1){
+            margin-top: 40px;
+     }
+     .podcast-num:nth-child(2){
+            margin-top: 40px;
+     }
+     .podcast-title{
+        font-size: 2rem;
+     }
+     .podcast-p{
+        font-size: .6rem;
+        margin-bottom: 40px;
+     }
+    
+    .choose-techwave{
+            padding: 40px 80px;
+            width: 100%;
+    }
+    .choose-techwave-title{
+        font-size: 2rem;
+    }
+    .card-parent{
+        display: grid;
+        grid-template-columns: repeat(1,400px);
+        margin: 0 auto;
+        width: 100%;
+    }
+    .card1,.card2,.card3,.card4,.card5{
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .feautured-title{
+    font-size: 2rem;
+  }
+  .featured-videos{
+    flex-direction: column;
+    gap: 16px;
+  }
+  .video1, .video2 ,.video3{
+    width: 100%;
+  }
+  iframe{
+    width: 100%;
+  }
+  .host{
+    width: 92%;
+  }
+  .host-parent{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .icon-parent{
+    justify-content: center;
+  }
+footer.container {
+  background-image: url(./B13-A02-TechWave/assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 16px 40px; 
+  min-height: auto; 
+  margin-top: -60px;         
+}
+.footer-h1 {
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.75rem); 
+  color: #fff;
+  padding-top: 0;          
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.footer-icon-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;           
+  gap: 18px 28px;            
+  margin: 24px 0;
+  text-align: center;
+}
+.footer-icon {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.footer-icon-title {
+  color: #fff;
+  font-size: 16px;
+  padding: 0;               
+  margin-right: 24px;      
+  display: inline-flex;
+  align-items: center;
+}
+.footer-icon-title:last-child {
+  margin-right: 0;
+}
+.footer-p {
+  color: #fafafa;
+  text-align: center;
+  margin: 28px 0 0;         
+  font-size: 14px;
+}
 }
