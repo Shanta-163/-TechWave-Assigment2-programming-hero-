@@ -42,6 +42,15 @@ body{
    background:linear-gradient(90deg, #FFB347 0%, #FF2FD8 50%, #7B2FFF 100%) ;
    border: none;
 }
+button:hover {
+  animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
 nav{
     display: flex;
     gap: 24px;
